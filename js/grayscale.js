@@ -3,15 +3,40 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ 
+ $( document ).ready(function() {
+   if (($( window ).width())<700){
+      $("#logo").attr('src',"https://sites.google.com/a/mensuratec.com/index/projetos/Due%20logo%20AZUL-01%20(1).png");
+   }
+});
+
+
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        
+       $("#logo").attr('src',"https://sites.google.com/a/mensuratec.com/index/projetos/Due%20logo%20AZUL-01%20(1).png");
+
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+       if (($( window ).width())>700){
+
+        $("#logo").attr('src',"http://lh3.googleusercontent.com/aqU_iOfVmNcxm3fBcSApz9yKnFCi2g43yQ8PbJMk2ucA8VwxiNETEziF_Qqsm6g4AeFuUyFk_1eGuYojUzinICc");
+        }
     }
 });
+
+
+$('#videoModal').on('show.bs.modal', function () {
+$('#video').attr('src', "http://www.youtube.com/embed/hfENgF7mHro?autoplay=1");
+})
+
+$('#videoModal').on('hidden.bs.modal', function () {
+$('#video').attr('src', "");
+})
+
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -29,28 +54,20 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// remove the focused state after click,
-// otherwise bootstrap will still highlight the link
-$("a").mouseup(function(){
-    $(this).blur();
-})
-
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
+   var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 10,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(-27.592149, -48.497698),
 
         // Disables the default Google Maps UI components
-        disableDefaultUI: true,
+        disableDefaultUI: false,
         scrollwheel: false,
         draggable: false,
 
@@ -62,7 +79,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 17
+                "lightness": 25
             }]
         }, {
             "featureType": "landscape",
@@ -70,7 +87,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 20
+                "lightness": 40
             }]
         }, {
             "featureType": "road.highway",
@@ -104,7 +121,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 16
+                "lightness": 25
             }]
         }, {
             "featureType": "poi",
@@ -119,9 +136,9 @@ function init() {
             "stylers": [{
                 "visibility": "on"
             }, {
-                "color": "#000000"
+                "color": "@primary"
             }, {
-                "lightness": 16
+                "lightness": 50
             }]
         }, {
             "elementType": "labels.text.fill",
@@ -130,7 +147,7 @@ function init() {
             }, {
                 "color": "#000000"
             }, {
-                "lightness": 40
+                "lightness": 10
             }]
         }, {
             "elementType": "labels.icon",
@@ -143,7 +160,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 19
+                "lightness": 25
             }]
         }, {
             "featureType": "administrative",
@@ -151,7 +168,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 20
+                "lightness": 25
             }]
         }, {
             "featureType": "administrative",
@@ -159,7 +176,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 17
+                "lightness": 25
             }, {
                 "weight": 1.2
             }]
@@ -174,11 +191,12 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var image = 'http://lh3.googleusercontent.com/Mvlm15OJmwyhb0daXiYT798_Kk7Y-mH_65w-DdEqUOLppFlHdsXyxwJvj1uMpPbjBaKD9ZML5hp2N8dzOPEGZyY';
+    var myLatLng = new google.maps.LatLng(-27.592149, -48.497698);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image
     });
 }
+
