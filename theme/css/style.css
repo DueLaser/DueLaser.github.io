@@ -213,7 +213,7 @@ form{
 }
 
 .poster-image {
-	background: url('../theme/img/mobile.jpg');
+	background: url('../img/mobile.jpg');
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
