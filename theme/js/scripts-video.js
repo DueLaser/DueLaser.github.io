@@ -142,7 +142,7 @@ $(document).ready(function(){
     COUNTDOWN
     =============================================== */
 		var now = new Date();
-	var date = new Date('2016','05','04','14','00','00'); // new Date( year , month , day , hour , minutes , seconds)
+	var date = new Date('2016','06','19','14','00','00'); // new Date( year , month , day , hour , minutes , seconds)
 	var difference = date - now - (30*24*60*60*1000); //fix a gap of 30 days
 	var countTo = difference + now.valueOf();
 	$('.timer').countdown(countTo, function(event) {
