@@ -1,5 +1,8 @@
 RewriteEngine on
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)\.(jpg|jpeg|png|bmp|gif)$ posts/$1.$2 [NC,L]
+
 AddType application/x-httpd-php .html .xml
 
 AddType video/mp4  mp4 m4v
