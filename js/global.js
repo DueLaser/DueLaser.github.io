@@ -209,7 +209,7 @@ $(function() {
 		return false;
 	});
 
-	$(document).on('click', '.popup-wrapper .button-close, .popup-wrapper .layer-close', function(e){
+	$(document).on('click', '.popup-wrapper .button-close, .popup-wrapper .layer-close, .fechar', function(e){
 		e.preventDefault();
 		if($('.video-popup').hasClass('active')) $('.video-popup .popup-iframe').html('');
 		$('.popup-wrapper, .popup-content').removeClass('active');
