@@ -28,8 +28,8 @@ $(function() {
 
 	"use strict";
 	
-	var urlForm = 'http://duelaser.us12.list-manage.com/subscribe/post';
-	var u = '90968be0bc1c3e30cb4b4ddc3';
+	var urlForm = 'http://duelaser.us16.list-manage.com/subscribe/post';
+	var u = '5dfa9df5d02f6065c84e02ae3';
 	var id = '1fdf1b7bfc';
     
 
