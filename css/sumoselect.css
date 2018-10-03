@@ -37,8 +37,8 @@
         .SumoSelect > .optWrapper.multiple > .options li ul li.opt{padding-left: 50px;}
         .SumoSelect > .optWrapper.isFloating > .options {max-height: 100%;}
         .SumoSelect > .optWrapper > .options  li.opt, .SumoSelect .no-match { line-height: 20px; padding: 5px 15px; font-size: 12px; color: #555; cursor: pointer;}
-            .SumoSelect > .optWrapper > .options li.opt:hover { background-color: #b8cd06; color: #fff;}
-            .SumoSelect > .optWrapper > .options li.opt.selected:not(.disabled){background-color: #b8cd06; color: #fff;}
+            .SumoSelect > .optWrapper > .options li.opt:hover { background-color: #00afef; color: #fff;}
+            .SumoSelect > .optWrapper > .options li.opt.selected:not(.disabled){background-color: #00afef; color: #fff;}
 
             .SumoSelect > .optWrapper > .options li label { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block;cursor: pointer;}
             .SumoSelect > .optWrapper > .options li span { display: none; }
@@ -77,7 +77,7 @@
 
     .SumoSelect > .optWrapper.multiple > .options li.opt.selected span i,
     .SumoSelect .select-all.selected > span i,
-    .SumoSelect .select-all.partial > span i{background-color: rgb(17, 169, 17);border-color: transparent;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC');background-repeat: no-repeat;background-position: center center;}
+    .SumoSelect .select-all.partial > span i{background-color: #00afef;border-color: transparent;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC');background-repeat: no-repeat;background-position: center center;}
     /*disabled state*/
     .SumoSelect.disabled { opacity: 0.7;cursor: not-allowed;}
      .SumoSelect.disabled > .CaptionCont{border-color:#ccc;}
