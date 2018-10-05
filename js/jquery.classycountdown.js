@@ -238,7 +238,7 @@
                             }
                         }
                     };
-                case 'light-green':
+                case 'light-blue':
                     return {
                         labels: true,
                         style: {

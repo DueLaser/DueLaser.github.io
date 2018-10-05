@@ -277,7 +277,7 @@
   height: 15px;
   display: inline-block;
   border-radius: 100%;
-  border: 1px #d9d9d9 solid;
+  border: 1px #818181 solid;
   transition: all .15s;
   -webkit-transition: all .15s;
 }

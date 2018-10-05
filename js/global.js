@@ -56,7 +56,7 @@ $(function() {
 		if(!$('.countdown').length) return false;
 		$('.countdown').not('.initialized').each(function(){
            $(this).addClass('initialized').ClassyCountdown({
-               theme: ($(this).hasClass('light'))?'light':(($(this).hasClass('light-green'))?'light-green':''),
+               theme: ($(this).hasClass('light'))?'light':(($(this).hasClass('light-blue'))?'light-blue':''),
                end: (new Date($(this).data('end'))).getTime()
            }); 
         });
